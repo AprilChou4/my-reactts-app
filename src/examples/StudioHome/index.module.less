@@ -1,0 +1,189 @@
+.getTranslate(@x,@y){
+  transform: translate(@x,@y) skew(0deg, 30deg) rotate(-60deg)
+}
+.homeWrap {
+  overflow: hidden;
+  background:#1c242c url("../../assets/images/homeImages/bg.png") center/cover no-repeat;
+  height: 100%;
+}
+.container {
+  // background: url("../../assets/images/homeImages/bg-line.svg") center/contain no-repeat;
+  height: 100%;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studioModule {
+  .studioLine {
+    flex-direction: column;
+    &:after {
+      // transform: rotate(90deg);
+      display: none;
+    }
+  }
+  .stdioName {
+    width: 50px;
+    height: 195px;
+    background: url(../..assets/images/homeImages/dataStudio-name.svg) bottom center / 100%
+      no-repeat;
+    transform: skew(0deg, 30deg) rotate(-60deg);
+    position: absolute;
+    bottom: -14px;
+  }
+}
+
+
+// .content {
+//   //   transform: rotate(60deg) skew(0deg, -30deg) ;
+//     transform: translate(0,0) rotate(60deg) ;
+//   height: 100%;
+//   transform-origin: center;
+// }
+
+// 外边框
+.outBorder {
+  transform: rotate(60deg) skew(0, -30deg);
+  transform-origin: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-width: 27px;
+  border-style: dashed;
+  /*Firefox*/
+  -moz-border-image: url("../../assets/images/homeImages/border-bg.svg") 82 87 83 83  round;
+  // // /*Chrome & Safari*/
+  -webkit-border-image: url("../../assets/images/homeImages/border-bg.svg") 82 87 83 83 round;
+  /*Opera*/
+  border-image: url("../../assets/images/homeImages/border-bg.png") 82 87 83 83  round;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  .appModule {
+    transform: skew(0deg, 30deg) rotate(-60deg);
+    transform-origin: center bottom;
+    z-index: 10;
+    &.appModuleSquare {
+      transform: skew(0deg, 30deg) rotate(-60deg) translate3d(70px,0,0);
+    }
+  }
+  &.columnMiddle {
+    // 数据源/数据集成交换/贴源数据
+    .line1 {
+      width: 10%;
+      margin-left: -30px;
+        .datasourceModule {
+          .getTranslate(-18px,-30%);
+        }
+    }
+    .line2 {
+      width: 10%;
+      &::after { 
+        width: calc(100% - 40px);
+        left: 40px;
+      }
+      .exchangeModule {
+          .getTranslate(0,-28%);
+      }
+    }
+    .line3 {
+      width: 8%;
+      .odsModule {
+        .getTranslate(-6px,-28%);
+      }
+    }
+
+    // 数据工坊 
+    .studioLine {
+      .appModule {
+        &.indicatorModule {
+          .getTranslate(30%,5%)
+        }
+        &.dataModelModule {
+          .getTranslate(30%,-30%)
+        }
+        &.dataProcessModule {
+          .getTranslate(30%,-60%)
+        }
+      }
+    }
+    .standardModule {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      .getTranslate(-30%,20%);
+    }
+    .marketModule {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      .getTranslate(-30%,-80%);
+    }
+    .assetModule {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      .getTranslate(10%,-75%);
+    }
+
+    // 数据服务
+    .serviceModule {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      .getTranslate(-10%,30%);
+    }
+
+    .scienceModule  {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      .getTranslate(-10%,-80%);
+    }
+
+    .applicationModule {
+      .getTranslate(100%,-30%)
+    }
+    
+   
+  }
+  &.columnTop {
+    position: absolute;
+    top: -160px;
+    justify-content: space-between;
+    width: 60%;
+  }
+  &.columnBottom {
+    position: absolute;
+    bottom: -76px;
+    width: 40%;
+    justify-content: space-between;
+  }
+}
+
+.applicationTipWrap {
+  :global {
+    .sup-popover-inner-content {
+      padding: 0;
+    }
+    .sup-popover-inner {
+      background: linear-gradient(0deg, rgba(30, 86, 113, 0.9) 0%, rgba(13, 23, 37 , 0.9) 100%);
+    }
+    .sup-popover-content > .sup-popover-arrow {
+      border-right-color: #1e546f;
+      border-bottom-color: #1e546f;
+      border-width: 10px;
+    }
+    
+  }
+} 

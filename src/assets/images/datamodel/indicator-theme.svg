@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>指标定义</title>
+    <g id="数据建模" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="数据建模-模型概览" transform="translate(-1393.000000, -499.000000)" fill-rule="nonzero">
+            <g id="编组-13" transform="translate(1393.437907, 499.008106)">
+                <path d="M18.8323429,8.27921813 L19.1012584,15.0355656 L16.8524236,13.6182181 L10.400799,22.4843791 L6.62389118,16.3507379 L1.81978788,24.6184138 L0.123423645,23.412736 L6.62389118,12.4359606 L10.5825116,18.9037796 L15.1484236,12.5442181 L12.6196945,10.9496185 L18.8323429,8.27921813 Z" id="形状结合" fill="#0F71E2"></path>
+                <path d="M31,1 L31,31 L1,31 L1,1 L31,1 Z" id="路径" stroke="#000000" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

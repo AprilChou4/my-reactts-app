@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon_ cancel</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件库" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="图标Iconography" transform="translate(-294.000000, -861.000000)"  fill-rule="nonzero">
+            <g id="Icon" transform="translate(294.000000, 861.000000)">
+                <path d="M10,2 C14.418278,2 18,5.581722 18,10 C18,14.418278 14.418278,18 10,18 C5.581722,18 2,14.418278 2,10 C2,5.581722 5.581722,2 10,2 Z M14.5220207,4.65646281 L6.32924571,15.9614813 C7.39647949,16.6200255 8.65386585,17 10,17 C13.8659932,17 17,13.8659932 17,10 C17,7.85787801 16.0377982,5.94049028 14.5220207,4.65646281 Z M10,3 C6.13400675,3 3,6.13400675 3,10 C3,12.1609621 3.97920146,14.0932195 5.51810158,15.3772693 L13.7145467,4.06576428 C12.637985,3.39046591 11.3645916,3 10,3 Z" id="icon_-cancel"></path>
+            </g>
+        </g>
+    </g>
+</svg>

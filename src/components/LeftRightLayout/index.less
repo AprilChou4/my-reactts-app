@@ -1,0 +1,82 @@
+@paddingDefualt: 16px;
+@paddingCompact: 8px;
+@paddingLoose: 16px;
+@rightPaddingLeft: 7px;
+
+@rightTitlePaddingDefualt: 16px;
+@rightTitlePaddingCompact: 8px;
+@rightTitlePaddingLoose: 24px;
+
+.LeftRightWrap {
+  display: flex;
+  min-height: 530px;
+  border-radius: 5px;
+  overflow: auto;
+
+  .Left {
+    width: 240px;
+    background-color: #fff;
+
+    .titleWrap {
+      height: 54px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: @paddingDefualt;
+      padding-right: 8px;
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+  }
+
+  .tab {
+    width: 10px;
+    //width: 1px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: col-resize;
+    margin-right: -9px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .tab:hover {
+    border-left: 2px solid #ccc;
+  }
+
+  .Right {
+    flex: 1;
+    background-color: #fff;
+    overflow: auto;
+
+    .titleWrap {
+      height: 54px;
+      display: flex;
+      justify-content: space-between;
+      line-height: 1;
+      align-items: center;
+      padding: @rightTitlePaddingDefualt;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .titleLeft {
+        display: flex;
+      }
+
+      .editIcon {
+        font-family: "iconfont";
+        font-size: 18px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

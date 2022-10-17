@@ -1,0 +1,175 @@
+/* 数字滚动 */
+.box-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.list-wrap {
+  height: 1em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.roll div {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.roll_1 {
+  // animation: roll_1 1s forwards;
+  animation: roll_1 1s, bounce-in-down 1.2s forwards;
+}
+
+.roll_2 {
+  // animation: roll_2 1s forwards;
+  animation: roll_2 1s, bounce-in-down 1.2s forwards;
+}
+
+.roll_3 {
+  // animation: roll_3 1s forwards;
+  animation: roll_3 1s, bounce-in-down 1.2s forwards;
+}
+
+.roll_4 {
+  // animation: roll_4 1s forwards;
+  animation: roll_4 1s, bounce-in-down 1.2s forwards;
+}
+
+.roll_5 {
+  // animation: roll_5 1s forwards;
+  animation: roll_5 1s, bounce-in-down 1.2s forwards;
+}
+
+.roll_6 {
+  // animation: roll_6 1s forwards;
+  animation: roll_6 1s, bounce-in-down 1.2s forwards;
+}
+
+.roll_7 {
+  // animation: roll_7 1s forwards;
+  animation: roll_7 1s, bounce-in-down 1.2s forwards;
+}
+
+.roll_8 {
+  // animation: roll_8 1s forwards;
+  animation: roll_8 1s, bounce-in-down 1.2s forwards;
+}
+
+/*省略roll_2——roll_8*/
+
+.roll_9 {
+  // animation: roll_9 1s forwards;
+  animation: roll_9 1s, bounce-in-down 1.2s forwards;
+}
+
+@keyframes roll_1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -1em, 0);
+  }
+}
+
+@keyframes roll_2 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -2em, 0);
+  }
+}
+
+@keyframes roll_3 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -3em, 0);
+  }
+}
+
+@keyframes roll_4 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -4em, 0);
+  }
+}
+
+@keyframes roll_5 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -5em, 0);
+  }
+}
+
+@keyframes roll_6 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -6em, 0);
+  }
+}
+
+@keyframes roll_7 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -7em, 0);
+  }
+}
+
+@keyframes roll_8 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -8em, 0);
+  }
+}
+
+@keyframes roll_9 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -9em, 0);
+  }
+}
+
+// 抖动
+@keyframes bounce-in-down {
+  25% {
+    transform: translateY(calc(-100% + 1em + 8%));
+  }
+  50% {
+    transform: translateY(calc(-100% + 1em - 4%));
+  }
+  70% {
+    transform: translateY(calc(-100% + 1em + 2%));
+  }
+  85% {
+    transform: translateY(calc(-100% + 1em - 1%));
+  }
+  to {
+    transform: translateY(calc(-100% + 1em));
+  }
+}

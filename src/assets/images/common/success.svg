@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 11 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Tick</title>
+    <desc>Created with Sketch.</desc>
+    <g id="C-数据集成--一期" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="c1数据源列表样式2" transform="translate(-1369.000000, -620.000000)" fill="#1BB934">
+            <g id="Table-2" transform="translate(500.000000, 130.000000)">
+                <g id="Row" transform="translate(0.000000, 483.000000)">
+                    <path d="M873.2425,14.77825 C872.8515,15.16925 872.2185,15.16925 871.8285,14.77825 L869.2925,12.24325 C868.9025,11.85225 868.9025,11.21925 869.2925,10.82825 C869.6835,10.43825 870.3165,10.43825 870.7065,10.82825 L872.5355,12.65725 L877.8995,7.29325 C878.2895,6.90225 878.9225,6.90225 879.3135,7.29325 C879.7045,7.68325 879.7045,8.31625 879.3135,8.70725 L873.2425,14.77825 Z" id="Tick"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

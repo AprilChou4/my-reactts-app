@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8">
+    <style>
+        .test{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .test:hover {
+            animation:move2 1s ease,move1 1s ease 1s;
+        }
+        @keyframes move1{
+            from {transform: scale(1.5) translateX(0)}
+            to {transform: scale(1.5) translateX(100px)}
+        }
+        @keyframes move2{
+            from {transform: scale(1)}
+            to {transform: scale(1.5)}
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="test">我是动画</div>
+</body>
+ 
+</html>

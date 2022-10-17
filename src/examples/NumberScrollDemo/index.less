@@ -1,0 +1,38 @@
+
+  
+  .getRoll(@key) {
+    animation: @key 1s linear 1 forwards, bounce-in-down1 .5s 1s backwards;
+    // animation: @key 1s forwards;
+  }
+
+  .roll_single {
+    text-align: center;
+    font-size: 20px;
+    height: 1em;
+    line-height: 1em;
+    animation: bounce-in-down1 .5s forwards;
+  }
+  
+  
+  // 抖动
+  @keyframes bounce-in-down1 {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(18%);
+    }
+    50% {
+      transform: translateY(-8%);
+    }
+    70% {
+      transform: translateY(2%);
+    }
+    85% {
+      transform: translateY(-1%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

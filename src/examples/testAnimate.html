@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="">
+ .overimg {
+position: relative;
+display: block; /* overflow: hidden;*/
+-webkit-box-shadow: 0 0 10px #FFF;
+box-shadow: 0 0 10px #FFF; /* overflow: hidden;*/
+}
+.light {
+cursor: pointer;
+position: absolute;
+left: -100px;
+top: 0;
+width: 180px;
+height: 90px;
+background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+background-image: -o-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+background-image: -ms-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+background-image: linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+-webkit-transform: skewx(-25deg);
+-moz-transform: skewx(-25deg);
+-o-transform: skewx(-25deg);
+-ms-transform: skewx(-25deg);
+transform: skewx(-25deg);
+}
+.overimg:hover .light {
+left: 180px;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}        
+}
+</style>
+</head>
+<body>
+   <p class="overimg">
+    <a><img src="./pandas.png" width="300px" height="150px"></a>
+    <i class="light"></i>
+</p>
+</body>
+</html>

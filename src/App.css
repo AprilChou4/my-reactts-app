@@ -1,0 +1,17 @@
+.nav {
+  height: 48px;
+  /* background-color: #1f2935; */
+}
+#root {
+  width: 100%;
+  height: calc(100% - 48px);
+  color:#000;
+  /* padding-top: 300px; */
+  /* background-color: #252526; */
+  /* text-align: center; */
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}

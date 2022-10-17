@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>取消注释</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件库" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="图标Iconography" transform="translate(-774.000000, -655.000000)" >
+            <g id="取消注释-2" transform="translate(774.000000, 655.000000)">
+                <path d="M13.1264648,3 L16,6.86523438 L16,17 L5,17 L5,3 L13.1264648,3 Z M11.576,4 L6,4 L6,16 L15,16 L15,7.911 L11.5766602,7.91162109 L11.576,4 Z M12.5,11 C12.7761424,11 13,11.2238576 13,11.5 C13,11.7761424 12.7761424,12 12.5,12 L8.5,12 C8.22385763,12 8,11.7761424 8,11.5 C8,11.2238576 8.22385763,11 8.5,11 L12.5,11 Z M12.6238262,4 L12.576,4 L12.5766602,6.91162109 L14.788,6.911 L12.6238262,4 Z" id="取消注释"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="564px" height="330px" viewBox="0 0 564 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形备份 20</title>
+    <defs>
+        <path d="M910.343829,349.15299 L1107.40539,460.483112 C1110.29052,462.113063 1111.30803,465.773253 1109.67808,468.658374 C1109.1599,469.575587 1108.40936,470.340202 1107.50193,470.875332 L760.945077,675.247108 C757.265812,677.416848 752.710538,677.467282 748.984136,675.379535 L550.493014,564.173294 C547.602101,562.553638 546.571545,558.897098 548.191202,556.006186 C548.711136,555.078159 549.468446,554.305044 550.385538,553.766055 L898.361004,349.255378 C902.051165,347.086611 906.617147,347.047597 910.343829,349.15299 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="575.082604" height="333" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.2" opacity="0.7" stroke-dasharray="8">
+        <g transform="translate(-547.000000, -347.000000)" fill="#009CE6" id="矩形备份-20" stroke="#3BB9FE" stroke-width="4">
+            <use mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

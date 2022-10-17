@@ -1,0 +1,203 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #ddd;
+}
+
+#root {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  color: #354052;
+  min-width: 1100px;
+}
+
+dl,
+dt,
+dd,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  z-index: 99;
+  background: transparent;
+
+  &-thumb {
+    // 滑块
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &-track {
+    margin: 4px 0;
+    border-radius: 8px;
+  }
+
+  &-corner {
+    // 边角
+    background: transparent;
+  }
+
+  &:hover {
+    width: 8px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-size: 100% 100%;
+}
+
+.sup-spin-spinning {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  .sup-spin-dot.sup-spin-dot-spin {
+    margin-top: 25%;
+  }
+}
+
+// 文字超出部分隐藏
+.ellipsis-1 {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.filter-mask {
+  background-color: rgba(250, 250, 250, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+//解决超出文字部分隐藏
+.ellipsis-hide {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.padding-right-10 {
+  padding-right: 10px !important;
+}
+//全局tooltip，如果文字太多就滚动展示数据
+.sup-tooltip-inner {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.sup-upload-list-item {
+  .anticon.anticon-close {
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+    background-image: url(../../assets/images/common/close.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.CodeMirror {
+  color: #7f8fa4;
+  background: #273142;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 5px;
+}
+
+.CodeMirror-gutters {
+  background: #273142;
+  border-right: 1px solid #313d4f;
+}
+.CodeMirror-cursor {
+  border-left-color: #fff;
+}
+//代码补全提示框层级
+.CodeMirror-hints {
+  min-width: 100px;
+  z-index: 9999 !important;
+}
+
+.CodeMirror-hint {
+  line-height: 22px;
+}
+.CodeMirror-hints li.CodeMirror-hint-active {
+  background-color: #f1f4f8;
+  color: #354052;
+}
+
+.sup-empty-image {
+  background: url(../images/common/empty.svg) no-repeat center;
+  background-size: 100% 100%;
+  margin-bottom: 14px;
+  & > img {
+    display: none;
+  }
+}
+
+//数据加工算子右键菜单样式,大部分样式需要用important覆盖
+//https://www.hightopo.com/guide/guide/plugin/contextmenu/ht-contextmenu-guide.html
+.ht-widget-contextmenu ul {
+  width: 70px;
+  text-align: center;
+  padding: 4px 0!important;
+  border-radius: 4px!important;
+  background: #fff!important;
+  border: none!important;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%)!important;
+}
+
+.ht-widget-contextmenu .menu-item {
+  padding: 5px 12px!important;
+  font-size: 14px!important;
+  color: #354052!important;
+}
+
+.ht-widget-contextmenu .menu-item.menu-item-hover {
+  background-color: #e6f7ff!important;
+}
+
+.ht-widget-contextmenu .prefix {
+  margin: 0!important;
+  width: 0!important;
+}
+
+.ht-widget-contextmenu .suffix {
+  margin: 0!important;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件库" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="组件2" transform="translate(-204.000000, -1603.000000)" fill="#424242" fill-rule="nonzero">
+            <g id="图标" transform="translate(40.000000, 1101.000000)">
+                <g id="Component" transform="translate(40.000000, 334.000000)">
+                    <g id="Icon" transform="translate(96.000000, 136.000000)">
+                        <path d="M29.4976988,35 L29.475,34.998 L29.4101244,34.9922442 C29.1768752,34.9514173 29,34.7537279 29,34.5023012 L29,30.4976988 C29,30.2533686 29.1832562,30.0501597 29.4122514,30.0080186 L29.5,30 C29.7761424,30 30,30.2148438 30,30.4976988 L30,34 L33.5023012,34 C33.7466314,34 33.9498403,34.1832562 33.9919814,34.4122514 L34,34.5 C34,34.7761424 33.7851562,35 33.5023012,35 L29.5,35 L29.4976988,35 Z" id="Dropdown" transform="translate(31.500000, 32.500000) rotate(-45.000000) translate(-31.500000, -32.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

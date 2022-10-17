@@ -1,0 +1,18 @@
+/**
+* @components/Message  全局message样式
+*/
+.sup-message-notice {
+  max-width: 80%;
+  margin: auto;
+  .sup-message-custom-content {
+    display: flex;
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      word-wrap: break-word;
+    }
+  }
+}

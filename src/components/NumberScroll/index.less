@@ -1,0 +1,120 @@
+@wrapHeight: 1.5em;
+/* 数字滚动 */
+.box-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 50px;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.list-wrap {
+  height: @wrapHeight;
+  text-align: center;
+  overflow: hidden;
+  // border: 1px solid #fff;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+// .roll {
+//   transform: translateY(calc(0*1.5em));
+// }
+.roll div {
+  // font-size: 1em;
+  line-height: @wrapHeight;
+}
+
+// 动画帧方法
+.getKeyframe(@rollKey, @bouncekey, @height) {
+  // 滚动动画
+  @keyframes @rollKey {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, @height, 0);
+    }
+  }
+  // 抖动动画
+  @keyframes @bouncekey {
+    0% {
+      transform: translateY(calc(@height));
+    }
+    25% {
+      transform: translateY(calc(@height + 2%));
+    }
+    50% {
+      transform: translateY(calc(@height - 1.5%));
+    }
+    70% {
+      transform: translateY(calc(@height + 1%));
+    }
+    85% {
+      transform: translateY(calc(@height - 0.5%));
+    }
+    100% {
+      transform: translateY(calc(@height));
+    }
+  }
+}
+// 关键帧
+.getKeyframe(roll_1,debunce_1,-@wrapHeight*1em);
+.getKeyframe(roll_2,debunce_2,-@wrapHeight*2em);
+.getKeyframe(roll_3,debunce_3,-@wrapHeight*3em);
+.getKeyframe(roll_4,debunce_4,-@wrapHeight*4em);
+.getKeyframe(roll_5,debunce_5,-@wrapHeight*5em);
+.getKeyframe(roll_6,debunce_6,-@wrapHeight*6em);
+.getKeyframe(roll_7,debunce_7,-@wrapHeight*7em);
+.getKeyframe(roll_8,debunce_8,-@wrapHeight*8em);
+.getKeyframe(roll_9,debunce_9,-@wrapHeight*9em);
+.getKeyframe(roll_10,debunce_10,-@wrapHeight*10em);
+
+.getRoll(@keyRoll, @keyDebunce) {
+  // animation: @key 1s linear 1 forwards, bounce-in-down .5s 1s backwards;
+  // animation: @keyRoll 0.8s linear forwards;
+  animation: @keyRoll 0.8s linear forwards, @keyDebunce 0.6s ease 0.8s forwards;
+}
+
+.roll_1 {
+  .getRoll(roll_1,debunce_1);
+}
+
+.roll_2 {
+  .getRoll(roll_2,debunce_2);
+}
+
+.roll_3 {
+  .getRoll(roll_3,debunce_3);
+}
+
+.roll_4 {
+  .getRoll(roll_4,debunce_4);
+}
+
+.roll_5 {
+  .getRoll(roll_5,debunce_5);
+}
+
+.roll_6 {
+  .getRoll(roll_6,debunce_6);
+}
+
+.roll_7 {
+  .getRoll(roll_7,debunce_7);
+}
+
+.roll_8 {
+  .getRoll(roll_8,debunce_8);
+}
+
+.roll_9 {
+  .getRoll(roll_9,debunce_9);
+}
+
+.roll_10 {
+  .getRoll(roll_10,debunce_10);
+}

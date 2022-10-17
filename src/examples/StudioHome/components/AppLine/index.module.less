@@ -1,0 +1,47 @@
+@height: 3px;
+@borderImageHeight: 3;
+@color: #fff;
+.line {
+  position: relative;
+  width: 100%;
+  background: none;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "";
+    display: inline-block;
+    background-color: red;
+    background: linear-gradient(
+      95deg,
+      rgba(49, 202, 242, 0.4)  0%,
+      #50e3c2 100%
+    );
+    height: @height;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.square {
+  width: 100%;
+  height: 200px;
+  border: 2px solid @color;
+  border-image: linear-gradient(
+      to bottom right,
+      rgba(49, 202, 242, 0.4),
+      #50e3c2
+    )
+    @borderImageHeight;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &.dashSquare {
+    border-image: none;
+    border-style: dashed;
+    border-color: #3f92c8;
+    background-color: rgba(59, 185, 254, 0.1);
+    border-radius: 10px;
+  }
+}
