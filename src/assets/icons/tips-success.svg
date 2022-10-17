@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_success_slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-194.000000, -205.000000)">
+            <g id="icon_success" transform="translate(194.000000, 205.000000)">
+                <rect id="Rectangle-16" fill="#00B80B" x="0" y="0" width="16" height="16" rx="8"></rect>
+                <path d="M11,4 L11,11 C11,11.5522847 10.5522847,12 10,12 C9.44771525,12 9,11.5522847 9,11 L9,5 L6,5 C5.44771525,5 5,4.55228475 5,4 C5,3.44771525 5.44771525,3 6,3 L10,3 C10.5522847,3 11,3.44771525 11,4 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(8.000000, 7.500000) scale(1, -1) rotate(-45.000000) translate(-8.000000, -7.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

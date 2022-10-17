@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>下载</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件库" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标Iconography" transform="translate(-294.000000, -698.000000)" fill="#969CA6">
+            <g id="下载-2" transform="translate(294.000000, 698.000000)">
+                <path d="M10,4 C9.725,4 9.5,4.2235 9.5,4.5 L9.5,11.293 L8.355,10.1465 C8.16,9.951 7.84,9.951 7.645,10.1465 C7.45,10.3415 7.45,10.6585 7.645,10.8535 L9.645,12.8535 C9.74,12.9475 9.865,13 10,13 C10.135,13 10.26,12.9475 10.355,12.8535 L12.355,10.8535 C12.55,10.6585 12.55,10.3415 12.355,10.1465 C12.16,9.951 11.84,9.951 11.645,10.1465 L10.5,11.293 L10.5,4.5 C10.5,4.2235 10.275,4 10,4 Z M5,15.5 C5,15.776 5.225,16 5.5,16 L14.5,16 C14.775,16 15,15.776 15,15.5 C15,15.224 14.775,15 14.5,15 L5.5,15 C5.225,15 5,15.224 5,15.5 Z" id="下载"></path>
+            </g>
+        </g>
+    </g>
+</svg>

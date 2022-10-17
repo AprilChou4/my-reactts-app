@@ -1,0 +1,68 @@
+//全局分页默认样式
+.sup-pagination {
+  user-select: none;
+  display: flex;
+  width: 100%;
+
+  .sup-pagination-total-text {
+    flex: 1;
+    font-size: 12px;
+    color: #7c8691;
+    line-height: 32px;
+  }
+
+  .sup-pagination-item {
+    line-height: 32px;
+    margin-right: 0;
+  }
+
+  .sup-pagination-next {
+    margin-left: 8px;
+
+    & > span {
+      font-size: 12px;
+    }
+  }
+
+  .sup-pagination-prev,
+  .sup-pagination-jump-prev,
+  .sup-pagination-jump-next {
+    margin-right: 0;
+  }
+
+  .sup-pagination-disabled {
+    svg {
+      cursor: not-allowed;
+      path {
+        fill: #ced0da;
+      }
+    }
+  }
+
+  .sup-pagination-options {
+    font-size: 12px;
+    color: #2a3238;
+    margin: 3px 0 3px 18px;
+
+    .sup-pagination-options-size-changer {
+      height: 26px;
+      font-size: 12px;
+      color: #2a3238;
+
+      .sup-select-selection--single {
+        .sup-select-selection__rendered {
+          line-height: 24px;
+        }
+      }
+    }
+
+    .sup-pagination-options-quick-jumper {
+      height: 26px;
+      line-height: 26px;
+
+      input {
+        height: 26px;
+      }
+    }
+  }
+}

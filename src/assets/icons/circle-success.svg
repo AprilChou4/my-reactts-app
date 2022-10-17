@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Positive Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件库" stroke="none" stroke-width="1"  fill-rule="evenodd" opacity="0.699999988">
+        <g id="弹框" transform="translate(-532.000000, -1384.000000)" fill="#FFFFFF">
+            <g id="Navigations,-Paginations,-Tabs-&amp;-All-Content-Related-Elements" transform="translate(35.000000, 37.000000)">
+                <g id="title">
+                    <g id="弹出模块对话框交互（需要用户确认的）" transform="translate(40.000000, 1237.000000)">
+                        <g id="Green" transform="translate(446.000000, 100.000000)">
+                            <path d="M19,10 C23.418,10 27,13.582 27,18 C27,22.418 23.418,26 19,26 C14.581,26 11,22.418 11,18 C11,13.582 14.581,10 19,10 Z M18.4393,21.0103 L22.5103,16.9393 C22.9013,16.5483 22.9013,15.9153 22.5103,15.5253 C22.1193,15.1343 21.4863,15.1343 21.0963,15.5253 L17.7323,18.8893 L16.9033,18.0603 C16.5133,17.6703 15.8803,17.6703 15.4893,18.0603 C15.0993,18.4513 15.0993,19.0843 15.4893,19.4753 L17.0253,21.0103 C17.4153,21.4013 18.0483,21.4013 18.4393,21.0103 Z" id="Positive-Icon"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

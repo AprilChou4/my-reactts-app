@@ -1,0 +1,45 @@
+.homeWrap {
+  background: url("./homeImages/bg.png") center/cover no-repeat;
+  height: 100%;
+  overflow: hidden;
+  // padding-right: 50px;
+  // padding-left: 50px;
+  // padding-top: 60px;
+}
+.container {
+  background: url("./homeImages/bg-line.svg") left top/contain no-repeat;
+  height: 100%;
+  margin: 50px;
+}
+
+.appModule {
+  transform: skew(0deg, 30deg) rotate(-60deg);
+  transform-origin: center bottom;
+  position: absolute;
+}
+.content {
+  //   transform: rotate(60deg) skew(0deg, -30deg) ;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 外边框
+.outBorder {
+  transform: rotate(60deg) skew(0,-30deg) translate(-95px,26px);
+  transform-origin: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 68%;
+  width: 56%;
+  border-width: 18px;
+  border-style: dashed;
+  /*Firefox*/
+  -moz-border-image: url("./homeImages/dashed_red.png") 6 repeat;
+  /*Chrome & Safari*/
+  -webkit-border-image: url("./homeImages/dashed_red.png") 6 repeat;
+  /*Opera*/
+  border-image: url("./homeImages/dashed_red.png") 6 repeat;
+}

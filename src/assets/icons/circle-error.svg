@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件库" stroke="none" stroke-width="1"  fill-rule="evenodd" opacity="0.699999988">
+        <g id="弹框" transform="translate(-1206.000000, -1477.000000)" fill="#FFFFFF">
+            <g id="Navigations,-Paginations,-Tabs-&amp;-All-Content-Related-Elements" transform="translate(35.000000, 37.000000)">
+                <g id="title">
+                    <g id="弹出模块对话框交互（需要用户确认的）" transform="translate(40.000000, 1237.000000)">
+                        <g id="Notifications" transform="translate(1120.000000, 90.000000)">
+                            <g id="Red" transform="translate(0.000000, 103.000000)">
+                                <path d="M11,18 C11,13.582 14.581,10 19,10 C23.418,10 27,13.582 27,18 C27,22.418 23.418,26 19,26 C14.581,26 11,22.418 11,18 Z M20.315,20.718 C20.702,21.105 21.331,21.105 21.718,20.718 C22.106,20.331 22.106,19.702 21.718,19.315 L20.41,18.007 L21.718,16.698 C22.105,16.311 22.105,15.683 21.718,15.295 C21.33,14.907 20.702,14.907 20.315,15.295 L19.007,16.603 L17.694,15.291 C17.307,14.903 16.678,14.903 16.291,15.291 C15.903,15.678 15.903,16.306 16.291,16.694 L17.603,18.006 L16.291,19.319 C15.903,19.707 15.903,20.335 16.291,20.722 C16.678,21.11 17.307,21.11 17.694,20.722 L19.007,19.41 L20.315,20.718 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

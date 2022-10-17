@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Error Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="C-数据集成--一期" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="c1数据源列表样式2" transform="translate(-1369.000000, -724.000000)" fill="#ED1C24">
+            <g id="Table-2" transform="translate(500.000000, 130.000000)">
+                <g id="Row" transform="translate(0.000000, 587.000000)">
+                    <path d="M876.718,14.718 C876.331,15.105 875.702,15.105 875.315,14.718 L873.007,12.41 L870.694,14.722 C870.307,15.11 869.678,15.11 869.291,14.722 C868.903,14.335 868.903,13.707 869.291,13.319 L871.603,11.006 L869.291,8.694 C868.903,8.306 868.903,7.678 869.291,7.291 C869.678,6.903 870.307,6.903 870.694,7.291 L873.007,9.603 L875.315,7.295 C875.702,6.907 876.33,6.907 876.718,7.295 C877.105,7.683 877.105,8.311 876.718,8.698 L874.41,11.007 L876.718,13.315 C877.106,13.702 877.106,14.331 876.718,14.718" id="Error-Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

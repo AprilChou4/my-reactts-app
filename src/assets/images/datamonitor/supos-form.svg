@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="37px" viewBox="0 0 36 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>supOS表单模板</title>
+    <defs>
+        <path d="M0,2.00174332 C0,0.89621101 0.897026226,4.61852778e-14 2.00494659,4.61852778e-14 L21.9950534,4.61852778e-14 C23.1023548,4.61852778e-14 24,0.889261723 24,2.00174332 L24,29.9982567 C24,31.103789 23.1029738,32 21.9950534,32 L2.00494659,32 C0.897645164,32 0,31.1107383 0,29.9982567 L0,2.00174332 Z" id="path-1"></path>
+        <filter x="-6.2%" y="-4.7%" width="112.5%" height="109.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0588235294   0 0 0 0 0.443137255   0 0 0 0 0.88627451  0 0 0 0.3 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-25.0%" y="-18.7%" width="150.0%" height="137.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-37.5%" y="-150.0%" width="175.0%" height="400.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-18.8%" y="-150.0%" width="137.5%" height="400.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-18.8%" y="-150.0%" width="137.5%" height="400.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="数据工坊" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="数据流监控" transform="translate(-1442.000000, -396.000000)">
+            <g id="编组-4" transform="translate(1442.000000, 396.007375)">
+                <path d="M31.9950534,4 C33.1023548,4 34,4.88926172 34,6.00174332 L34,33.9982567 C34,35.103789 33.1029738,36 31.9950534,36 L12.0049466,36 C10.8976452,36 10,35.1107383 10,33.9982567 L10,32 L23.9950534,32 C25.0526138,32 25.9180164,31.183411 25.9945044,30.1476491 L26,29.9982567 L26,4 L31.9950534,4 Z" id="形状结合" fill="#0F71E2"></path>
+                <g id="编组-5" transform="translate(2.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Base备份-30" opacity="0.5">
+                        <use fill="#CAE3FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M7,6.00174332 C7,4.89621101 7.89702623,4 9.00494659,4 L28.9950534,4 C30.1023548,4 31,4.88926172 31,6.00174332 L31,33.9982567 C31,35.103789 30.1029738,36 28.9950534,36 L9.00494659,36 C7.89764516,36 7,35.1107383 7,33.9982567 L7,6.00174332 Z" id="Base备份-30" fill="#6AAFFF" filter="url(#filter-4)" mask="url(#mask-2)"></path>
+                    <path d="M12.0205078,23 C12.0205078,22.4477153 12.4735441,22 13.017538,22 L19.0234777,22 C19.5741222,22 20.0205078,22.4438648 20.0205078,23 L20.0205078,23 C20.0205078,23.5522847 19.5674715,24 19.0234777,24 L13.017538,24 C12.4668934,24 12.0205078,23.5561352 12.0205078,23 L12.0205078,23 Z" id="Base备份-39" fill="#FFFFFF" filter="url(#filter-5)" mask="url(#mask-2)"></path>
+                    <path d="M12.0000005,11 C12.0000005,10.4477153 12.4446314,10 13.0008722,10 L26.9991288,10 C27.551895,10 28.0000005,10.4438648 28.0000005,11 L28.0000005,11 C28.0000005,11.5522847 27.5553696,12 26.9991288,12 L13.0008722,12 C12.448106,12 12.0000005,11.5561352 12.0000005,11 L12.0000005,11 Z" id="Base备份-30" fill="#FFFFFF" filter="url(#filter-6)" mask="url(#mask-2)"></path>
+                    <path d="M12.0000005,15 C12.0000005,14.4477153 12.4446314,14 13.0008722,14 L26.9991288,14 C27.551895,14 28.0000005,14.4438648 28.0000005,15 L28.0000005,15 C28.0000005,15.5522847 27.5553696,16 26.9991288,16 L13.0008722,16 C12.448106,16 12.0000005,15.5561352 12.0000005,15 L12.0000005,15 Z" id="Base备份-38" fill="#FFFFFF" filter="url(#filter-7)" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M26,10 L28.9906315,10 C29.5480906,10 30.0000005,10.4438648 30.0000005,11 L30.0000005,11 C30.0000005,11.5522847 29.5566473,12 28.9906315,12 L26,12 L26,10 Z" id="Base备份-30" fill="#FFFFFF"></path>
+                <path d="M26,14 L28.9906315,14 C29.5480906,14 30.0000005,14.4438648 30.0000005,15 L30.0000005,15 C30.0000005,15.5522847 29.5566473,16 28.9906315,16 L26,16 L26,14 Z" id="Base备份-38" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,384 @@
+//基础样式
+.sup-table {
+  //布局方式调整, 影响行内text的超出隐藏
+  .sup-table-scroll table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .sup-table-content > .sup-table-body > table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  //无数据placeholder样式，覆盖图标
+  .sup-table-placeholder {
+    border: none;
+    background: #fff;
+  }
+
+  //操作列icon显隐, 仅需使用全局类名 operator / more即可
+  .sup-table-row {
+    .operator {
+      display: none;
+    }
+
+    .more {
+      display: block;
+
+      i {
+        vertical-align: sub;
+      }
+    }
+
+    &:hover {
+      .operator {
+        display: block;
+      }
+
+      .more {
+        display: none;
+      }
+    }
+  }
+
+  .sup-table-row-hover {
+    .operator {
+      display: block;
+    }
+
+    .more {
+      display: none;
+    }
+  }
+  .sup-table-fixed-right,
+  .sup-table-fixed-left {
+    z-index: 10;
+  }
+
+  .sup-table-thead > tr > th {
+    overflow: hidden;
+    white-space: nowrap;
+    // width: 100%; // 多个右侧fixed的时候宽度有问题
+    text-overflow: ellipsis;
+  }
+}
+
+//自动撑满容器高度
+//1. 建议不含fixed列的Table使用
+//2. Table需配置scroll.y == calc(100% - apx), a为table-head高
+//3. Table带分页,需覆盖样式 .sup-table { height: calc(100% - apx); overflow: hidden }, a为Pagination组件高
+//4. 最佳方法为scroll.y == calc(100vh - apx) 或 apx, 为Table滚动区域设定一个绝对值
+.mp-table-grow {
+  .sup-table-wrapper,
+  .sup-spin-nested-loading,
+  .sup-spin-container,
+  .sup-table,
+  .sup-table-content {
+    height: 100%;
+  }
+
+  .sup-table-fixed-right {
+    bottom: 0;
+
+    .sup-table-body-outer {
+      height: 100%;
+    }
+  }
+
+  .sup-table-scroll {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    & > .sup-table-body {
+      flex: 1;
+    }
+  }
+}
+
+//通用table样式
+//1.只定义基础样式, 如head背景色, tr, tdd间距等, 不定义元素样式(input select等)
+//2.兼容select-column, fixed列
+
+//gray head table, 指标用
+.mp-table-gray {
+  .sup-table {
+    .sup-table-header {
+      background: #eff3f6;
+    }
+
+    .sup-table-thead > tr > th {
+      position: relative;
+      background: #eff3f6;
+      padding: 8px 10px;
+      color: #7f8fa4;
+      line-height: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 18px;
+        background: #dce0e6;
+        top: 8px;
+        right: 0;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+
+      &.sup-table-selection-column {
+        padding: 8px 0 8px 15px;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .sup-table-tbody > tr {
+      &:hover:not(.sup-table-expanded-row) {
+        td {
+          background: #ecf4fd; //覆盖hover背景色
+        }
+      }
+
+      td {
+        padding: 9px 10px;
+        background: #fff;
+        height: 45px;
+
+        span {
+          font-size: 14px;
+        }
+
+        &.sup-table-selection-column {
+          padding: 8px 0 8px 15px;
+        }
+      }
+      td.dateTime {
+        span {
+          color: #7f8fa4;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+//white head table, 数据源/数据开发用
+.mp-table-white {
+  .sup-table {
+    .sup-table-header {
+      background: #fff;
+    }
+
+    .sup-table-thead > tr > th {
+      position: relative;
+      background: #fff;
+      color: #7f8fa4;
+      line-height: 22px;
+      padding: 14px 10px;
+      border-bottom: 1px solid #dfe2e5;
+
+      &.sup-table-selection-column {
+        padding: 0;
+      }
+
+      .sup-table-column-sorter {
+        .sup-table-column-sorter-inner-full {
+          margin-top: -0.6em;
+
+          .sup-table-column-sorter-up,
+          .sup-table-column-sorter-down {
+            height: 0.4em;
+            line-height: 0.4em;
+          }
+        }
+
+        i {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .sup-table-tbody > tr {
+      &:hover:not(.sup-table-expanded-row) {
+        td {
+          background: #ecf4fd; //覆盖hover背景色
+        }
+      }
+
+      td {
+        padding: 5px 10px;
+        background: #fff;
+        height: 50px;
+
+        span {
+          font-size: 14px;
+        }
+
+        &.sup-table-selection-column {
+          padding: 0;
+        }
+      }
+      td.dateTime {
+        span {
+          color: #7f8fa4;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .sup-table-placeholder {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+//light gray head table, 元数据管理用
+.mp-table-gray-light {
+  .sup-table {
+    font-size: 12px;
+
+    .sup-table-header {
+      background: rgba(239, 243, 246, 0.6);
+    }
+
+    .sup-table-thead > tr > th {
+      position: relative;
+      background: rgba(239, 243, 246, 0.6);
+      padding: 8px 16px 8px 10px;
+      color: #7f8fa4;
+      line-height: 20px;
+
+      &.sup-table-selection-column {
+        padding: 8px 10px;
+      }
+
+      //&.sup-table-column-has-filters {
+      //  i {
+      //    display: none;
+      //  }
+      //
+      //  i.sup-table-filter-selected,
+      //  i.sup-table-filter-open {
+      //    display: block;
+      //  }
+      //}
+      //
+      //&:hover {
+      //  i {
+      //    display: block;
+      //  }
+      //}
+
+      .sup-table-column-sorter {
+        .sup-table-column-sorter-inner-full {
+          margin-top: -0.6em;
+
+          .sup-table-column-sorter-up,
+          .sup-table-column-sorter-down {
+            height: 0.4em;
+            line-height: 0.4em;
+          }
+        }
+
+        i {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .sup-table-tbody > tr {
+      &:hover:not(.sup-table-expanded-row) {
+        td {
+          background: #ecf4fd; //覆盖hover背景色
+        }
+      }
+
+      td {
+        padding: 9px 10px;
+        background: #fff;
+        height: 45px;
+        span {
+          font-size: 14px;
+        }
+      }
+      td.dateTime {
+        span {
+          color: #7f8fa4;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .sup-table-placeholder {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+//dark head table 数据加工算子用
+.mp-table-dark {
+  .sup-table {
+    font-size: 12px;
+
+    .sup-table-header {
+      background: #313d4f;
+    }
+
+    .sup-table-content > .sup-table-scroll > .sup-table-body {
+      background: #273142;
+    }
+
+    .sup-table-thead > tr > th {
+      position: relative;
+      background: #313d4f;
+      padding: 5px 8px;
+      color: #7f8fa4;
+      line-height: 20px;
+      border-bottom-color: #313d4f;
+
+      &.sup-table-selection-column {
+        padding: 8px 10px;
+      }
+    }
+
+    .sup-table-tbody > tr {
+      &:hover:not(.sup-table-expanded-row) {
+        td {
+          background: rgba(49, 61, 79, 0.8); //覆盖hover背景色
+        }
+      }
+
+      td {
+        padding: 8px;
+        background: #273142;
+        height: 38px;
+        border-bottom-color: #313d4f;
+
+        span {
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+    }
+
+    .sup-table-placeholder {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+    }
+  }
+}

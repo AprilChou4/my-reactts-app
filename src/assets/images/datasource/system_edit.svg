@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状结合 2</title>
+    <defs>
+        <rect id="path-1" x="320" y="160" width="298" height="281" rx="3"></rect>
+        <filter x="-3.7%" y="-3.9%" width="108.7%" height="109.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="数据工厂" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="数据源管理" transform="translate(-352.000000, -403.000000)">
+            <rect fill="#EFF3F6" x="0" y="0" width="1580" height="1020"></rect>
+            <g id="active备份-10">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <rect stroke="#CED0DA" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="320.5" y="160.5" width="297" height="280" rx="3"></rect>
+            </g>
+            <g id="编组-5" transform="translate(352.000000, 403.996313)" fill="#354052" fill-rule="nonzero">
+                <path d="M9.19315386,1.22337808 C9.46489023,1.22337808 9.68517607,1.44366393 9.68517607,1.7154003 C9.68517607,1.98713666 9.46489023,2.20742251 9.19315386,2.20742251 L9.19315386,2.20742251 L2.58775568,2.20742251 C2.31601931,2.20742251 2.09573346,2.42770835 2.09573346,2.69944472 L2.09573346,2.69944472 L2.09573346,13.5239334 C2.09573346,13.7956697 2.31601931,14.0159556 2.58775568,14.0159556 L2.58775568,14.0159556 L13.4122443,14.0159556 C13.6839807,14.0159556 13.9042665,13.7956697 13.9042665,13.5239334 L13.9042665,13.5239334 L13.9042665,6.35369368 C13.9042665,6.08195732 14.1245524,5.86167147 14.3962887,5.86167147 C14.6680251,5.86167147 14.888311,6.08195732 14.888311,6.35369368 L14.888311,6.35369368 L14.888311,13.5239334 C14.888311,14.3391425 14.2274534,15 13.4122443,15 L13.4122443,15 L2.58775568,15 C1.77254658,15 1.11168904,14.3391425 1.11168904,13.5239334 L1.11168904,13.5239334 L1.11168904,2.69944472 C1.11168904,1.88423563 1.77254658,1.22337808 2.58775568,1.22337808 L2.58775568,1.22337808 Z M12.6545301,1 L14.7421804,3.08765024 L6.64497083,11.1843678 L4.3693681,11.7743024 C4.14691889,11.8319927 3.91120669,11.7553684 3.76520106,11.5779024 C3.61919543,11.4004364 3.58942756,11.1543767 3.68890138,10.947213 L3.68890138,10.947213 L4.59323821,9.06129191 L12.6545301,1 Z M12.6545301,2.39193084 L5.40802699,9.63843396 L4.94257398,10.6087018 L6.139172,10.2987278 L13.3502495,3.08765024 L12.6545301,2.39193084 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>

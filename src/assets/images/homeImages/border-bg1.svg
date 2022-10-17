@@ -1,0 +1,43 @@
+<svg width="81.000000" height="81.000000" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<g clip-path="url(#clip2_1)">
+		<rect x="30.371420" y="65.000000" width="26.880478" height="3.385349" transform="rotate(82.9868 30.371420 65.000000)" fill="#82DA9E"/>
+		<rect x="37.153595" y="65.000000" width="26.880478" height="3.385349" transform="rotate(82.9868 37.153595 65.000000)" fill="#82DA9E"/>
+		<rect x="43.935768" y="65.000000" width="26.880478" height="3.385346" transform="rotate(82.9868 43.935768 65.000000)" fill="#82DA9E"/>
+		<rect x="50.717945" y="65.000000" width="26.880478" height="3.385347" transform="rotate(82.9868 50.717945 65.000000)" fill="#82DA9E"/>
+		<rect x="30.367981" y="-11.000000" width="26.880478" height="3.385349" transform="rotate(82.9868 30.367981 -11.000000)" fill="#BD4F4F"/>
+		<rect x="37.150154" y="-11.000000" width="26.880478" height="3.385348" transform="rotate(82.9868 37.150154 -11.000000)" fill="#BD4F4F"/>
+		<rect x="43.932327" y="-11.000000" width="26.880478" height="3.385347" transform="rotate(82.9868 43.932327 -11.000000)" fill="#BD4F4F"/>
+		<rect x="50.714508" y="-11.000000" width="26.880478" height="3.385347" transform="rotate(82.9868 50.714508 -11.000000)" fill="#BD4F4F"/>
+		<rect width="26.880474" height="3.385348" transform="matrix(0.992518 0.122098 0.0947151 -0.995887 -11 33.3714)" fill="#4A6777"/>
+		<rect width="26.880478" height="3.385347" transform="matrix(0.992518 0.122098 0.0947151 -0.995887 -11 42.3714)" fill="#4A6777"/>
+		<rect width="26.880476" height="3.385346" transform="matrix(0.992518 0.122098 0.0947151 -0.995887 -11 50.3714)" fill="#4A6777"/>
+		<rect width="26.880474" height="3.385348" transform="matrix(0.992518 0.122098 0.0947151 -0.995887 64 30.3714)" fill="#6D96CD"/>
+		<rect width="26.880478" height="3.385347" transform="matrix(0.992518 0.122098 0.0947151 -0.995887 64 37.1536)" fill="#6D96CD"/>
+		<rect width="26.880476" height="3.385346" transform="matrix(0.992518 0.122098 0.0947151 -0.995887 64 43.9358)" fill="#6D96CD"/>
+		<rect width="26.880478" height="3.385346" transform="matrix(0.992518 0.122098 0.0947151 -0.995887 64 50.7179)" fill="#6D96CD"/>
+		<rect x="-9.656746" y="11.016098" width="27.000000" height="2.991472" transform="rotate(23.1181 -9.656746 11.016098)" fill="#9B79E0"/>
+		<rect x="-7.874565" y="3.182343" width="27.000000" height="2.991472" transform="rotate(29.4951 -7.874565 3.182343)" fill="#9B79E0"/>
+		<rect x="-5.642189" y="-2.576752" width="27.000000" height="2.991472" transform="rotate(32.9499 -5.642189 -2.576752)" fill="#9B79E0"/>
+		<rect x="1.074142" y="-5.754974" width="21.040001" height="3.092925" transform="rotate(35.8538 1.074142 -5.754974)" fill="#9B79E0"/>
+		<rect width="27.000000" height="2.991468" transform="matrix(0.919697 -0.392629 -0.392629 -0.919697 -5.65675 67.4325)" fill="#F4C257"/>
+		<rect width="27.000002" height="2.991474" transform="matrix(0.870398 -0.492349 -0.492349 -0.870398 -3.87457 75.2663)" fill="#F4C257"/>
+		<rect width="26.999998" height="2.991472" transform="matrix(0.839146 -0.543905 -0.543905 -0.839146 -1.64219 81.0254)" fill="#F4C257"/>
+		<rect width="21.040001" height="3.092926" transform="matrix(0.810514 -0.58572 -0.58572 -0.810514 5.07414 84.2036)" fill="#F4C257"/>
+		<rect width="27.000002" height="2.991470" transform="matrix(-0.740859 0.671661 0.671661 0.740859 85.4954 4.23776)" fill="#E682DA"/>
+		<rect width="27.000002" height="2.991474" transform="matrix(-0.661675 0.749791 0.749791 0.661675 81.2507 -2.58325)" fill="#E682DA"/>
+		<rect width="27.000002" height="2.991472" transform="matrix(-0.615288 0.788302 0.788302 0.615288 77.2586 -7.29642)" fill="#E682DA"/>
+		<rect width="21.040005" height="3.092926" transform="matrix(-0.574562 0.818461 0.818461 0.574562 69.8723 -8.10492)" fill="#E682DA"/>
+		<rect x="85.565926" y="76.089783" width="27.000015" height="2.991468" transform="rotate(-134.148 85.565926 76.089783)" fill="#945757"/>
+		<rect x="80.894844" y="82.626205" width="27.000015" height="2.991476" transform="rotate(-127.771 80.894844 82.626205)" fill="#945757"/>
+		<rect x="76.610291" y="87.075172" width="27.000011" height="2.991473" transform="rotate(-124.316 76.610291 87.075172)" fill="#945757"/>
+		<rect x="69.187523" y="87.410957" width="21.040020" height="3.092926" transform="rotate(-121.412 69.187523 87.410957)" fill="#945757"/>
+	</g>
+	<defs>
+		<clipPath id="clip2_1">
+			<rect width="81.000000" height="81.000000" fill="white"/>
+		</clipPath>
+	</defs>
+</svg>

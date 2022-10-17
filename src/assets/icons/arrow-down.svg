@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 -6 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="开发任务" transform="translate(-615.000000, -998.000000)" fill="#595959" fill-rule="nonzero">
+            <g id="Popup" transform="translate(298.000000, 980.000000)">
+                <g id="down" transform="translate(313.000000, 12.000000)">
+                    <path d="M4.85849777,6.15146111 C4.66600489,5.95346843 4.34945379,5.94900997 4.15146111,6.14150285 C3.95346843,6.33399573 3.94900997,6.65054683 4.14150285,6.84853951 L7.64150285,10.4485395 C7.83784093,10.6504872 8.16215969,10.6504872 8.35849777,10.4485395 L11.8584978,6.84853951 C12.0509907,6.65054683 12.0465322,6.33399573 11.8485395,6.14150285 C11.6505468,5.94900997 11.3339957,5.95346843 11.1415029,6.15146111 L8,9.38272087 L4.85849777,6.15146111 Z" id="路径-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

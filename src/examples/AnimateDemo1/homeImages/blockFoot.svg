@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="121px" viewBox="0 0 100 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fill 6165</title>
+    <defs>
+        <linearGradient x1="92.1227422%" y1="47.8211727%" x2="2.299349%" y2="74.9048799%" id="linearGradient-1">
+            <stop stop-color="#3172F2" offset="0%"></stop>
+            <stop stop-color="#282ACD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="14.6249246%" x2="62.6311731%" y2="64.2803292%" id="linearGradient-2">
+            <stop stop-color="#1E20E6" offset="0%"></stop>
+            <stop stop-color="#3172F2" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="14.6249246%" x2="36.9990752%" y2="64.3177125%" id="linearGradient-3">
+            <stop stop-color="#265CF1" offset="0%"></stop>
+            <stop stop-color="#3172F2" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页备份" transform="translate(-473.000000, -631.000000)">
+            <g id="编组-12备份" transform="translate(472.015349, 631.395646)">
+                <polygon id="Fill-6163" fill="url(#linearGradient-1)" transform="translate(50.992629, 29.224924) scale(-1, 1) translate(-50.992629, -29.224924) " points="1.00060658 29.2246205 50.9929318 58.0880201 100.984651 29.225227 50.9923253 0.36182745"></polygon>
+                <polygon id="Fill-6165" fill="url(#linearGradient-2)" transform="translate(25.996163, 76.107620) scale(-1, 1) translate(-25.996163, -76.107620) " points="1 122.99062 50.9923253 94.1278268 50.9923253 29.2246205 1 58.0880201"></polygon>
+                <polygon id="Fill-6167" fill="url(#linearGradient-3)" transform="translate(75.988488, 76.107620) scale(-1, 1) translate(-75.988488, -76.107620) " points="50.9923253 94.1278268 100.984651 122.99062 100.984651 58.0880201 50.9923253 29.2246205"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

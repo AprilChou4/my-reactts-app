@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Add icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件库" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="图标Iconography" transform="translate(-680.000000, -217.000000)" fill="#424242" fill-rule="nonzero">
+            <g id="Add-icon-4" transform="translate(680.000000, 217.000000)">
+                <g id="Add-icon-3">
+                    <path d="M8,1 C8.55228475,1 9,1.44994876 9,2.00684547 L9,7 L13.9931545,7 C14.509501,7 14.9350657,7.38272018 14.9932262,7.88266744 L15,8 C15,8.55228475 14.5500512,9 13.9931545,9 L9,9 L9,13.9931545 C9,14.509501 8.61727982,14.9350657 8.11733256,14.9932262 L8,15 C7.44771525,15 7,14.5500512 7,13.9931545 L7,9 L2.00684547,9 C1.45078007,9 1,8.55613518 1,8 C1,7.44771525 1.44994876,7 2.00684547,7 L7,7 L7,2.00684547 C7,1.49049903 7.38272018,1.06493432 7.88266744,1.00677379 L8,1 Z" id="Add-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
