@@ -26,7 +26,7 @@ interface IState {
 }
 
 const numberReg = /[0-9]/;
-class Counter extends Component<IProps, IState> {
+class NumberScroll extends Component<IProps, IState> {
   public constructor(props: IProps) {
     super(props);
     this.state = {
@@ -164,4 +164,4 @@ class Counter extends Component<IProps, IState> {
     );
   }
 }
-export default React.memo(Counter);
+export default React.memo(NumberScroll);
