@@ -27,13 +27,17 @@ export default defineConfig({
     },
   },
   server: {
+    host: "0.0.0.0",
     port: 8088,
-    proxy: {
-      "/is": {
-        target: "http://",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/is/, ""),
-      },
-    },
   },
+  // server: {
+  //   port: 8088,
+  //   proxy: {
+  //     "/is": {
+  //       target: "http://",
+  //       changeOrigin: true,
+  //       rewrite: (path) => path.replace(/^\/is/, ""),
+  //     },
+  //   },
+  // },
 });

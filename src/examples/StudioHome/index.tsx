@@ -56,35 +56,44 @@ const titleStyle = {
 
 const StudioHome: FC<IProps> = (props: IProps) => {
   const { global } = props || {};
+  const homeRef: any = useRef();
   const wrapRef: any = useRef();
   // 内容区域style
   const [contStyle, setContStyle] = useState({});
+  // 默认100 有些笔记本默认是125
+  let zoom = detectZoom() / 100;
 
   const calcContStyle = () => {
-    let { clientWidth } = wrapRef.current || {
+    let { clientWidth, clientHeight } = wrapRef.current || {
       clientWidth: 0,
       clientHeight: 0,
     };
-    console.log(clientWidth, detectZoom(), "----contRef----");
+    console.log(clientWidth, clientHeight, detectZoom(), "----contRef----");
 
+    let realHeight = clientHeight * zoom;
     // 设置最小最大宽度
-    if (clientWidth < 1600) {
-      // clientWidth = 1600;
-    } else if (clientWidth > 1750) {
-      clientWidth = 1750;
+    if (realHeight < 700) {
+      realHeight = 700;
+      if (homeRef.current) {
+        homeRef.current.style.overflow = "auto";
+      }
     }
-    clientWidth = 1750;
 
     // 语法“pow(x,1/y)”，表示开x的y次方根。
     // Math.pow(3,1/2) 根号3
     const sqrt3 = Math.pow(3, 1 / 2);
-    // const baseWidth = 1 * clientWidth + 100;  // 100 margin??
-    const baseWidth = 1 * clientWidth;
-    const base = baseWidth * 0.3;
-    const width = ((baseWidth - base) * sqrt3) / 2; //cWidth*0.595
+    // const baseWidth = 1 * clientWidth;
+    // const base = baseWidth * 0.3;
+    // const width = ((baseWidth - base) * sqrt3) / 2; //cWidth*0.595
+    // const cStyle = {
+    //   width: width + "px",
+    //   height: (base * 2) / sqrt3 + "px", // bWidth *0.352
+    // };
+    let height = realHeight / 1.4; // 1.375
+    const width = (height * 2 * sqrt3) / 2;
     const cStyle = {
       width: width + "px",
-      height: (base * 2) / sqrt3 + "px", // bWidth *0.352
+      height: height + "px", // bWidth *0.352
     };
     setContStyle(cStyle);
   };
@@ -102,11 +111,8 @@ const StudioHome: FC<IProps> = (props: IProps) => {
     global.iframeRoutePush(url, { code, open: false });
   };
 
-  // 默认100 有些笔记本默认是125
-  const zoom = detectZoom() / 100;
-
   return (
-    <div className={styles.homeWrap}>
+    <div className={styles.homeWrap} ref={homeRef}>
       <div
         className={styles.container}
         ref={wrapRef}

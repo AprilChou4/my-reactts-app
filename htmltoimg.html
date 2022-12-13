@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="text/javascript" src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+      .item {
+        /* background: url(./bg.png) no-repeat; */
+        background: #061c41;
+        margin-bottom: 20px ;
+        height: 71px;
+        color: #fff;
+        font-size: 24px;
+        padding-left: 54px;
+        line-height: 68px;
+        display: flex;
+        align-items:center;
+      }
+      .item span {
+        font-size: 34px;
+        padding-left: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button style="margin: 16px 0;" onClick="doCut()">
+        点击截图
+      </button>
+      <div
+        style="height: 346px; width: 646px; padding:20px; background: #fff;"
+        id="roc"
+      >
+        <div class="item"><label>集会1</label> <span>7jtu-zC7m-8ptj</span></div>
+        <div class="item"><label>集会2</label> <span>7jtu-zC7m-8ptj</span></div>
+        <div class="item"><label>集会3</label> <span>7jtu-zC7m-8ptj</span></div>
+        <div class="item"><label>集会4</label> <span>7jtu-zC7m-8ptj</span></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function doCut(){
+        var wrapRef=document.getElementById('roc')
+          html2canvas(wrapRef).then((canvas) => {
+          const img = new Image();
+          img.src = canvas.toDataURL("png");
+          img.setAttribute("crossOrigin", "anonymous");
+          canvas.height = 500;
+          var context = canvas.getContext("2d");
+          img.onload = function () {
+            var w = img.width;
+            var h = img.height;
+            context.drawImage(img, 0, 0, w, h, 0, 0, w, h);
+            var imgUrl = canvas.toDataURL("image/png");
+            console.log(imgUrl);
+
+            const domA = document.createElement("a");
+            domA.setAttribute("href", imgUrl);
+            if ("download" in domA) {
+              domA.setAttribute("download", "集会码.png");
+            }
+            domA.style.display = "none";
+            // 触发点击
+            document.body.appendChild(domA);
+            domA.click();
+            // 然后移除
+            document.body.removeChild(domA);
+          };
+        });
+      }
+    </script>
+  </body>
+</html>
