@@ -1,0 +1,84 @@
+@paddingDefualt: 16px;
+@paddingCompact: 8px;
+@paddingLoose: 16px;
+@rightPaddingLeft: 7px;
+
+@rightTitlePaddingDefualt: 16px;
+@rightTitlePaddingCompact: 8px;
+@rightTitlePaddingLoose: 24px;
+
+.LeftRightWrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 530px;
+  border-radius: 5px;
+  overflow: auto;
+  margin-bottom: 20px;
+
+  .Left {
+    height: 240px;
+    background-color: #fff;
+
+    .titleWrap {
+      height: 54px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: @paddingDefualt;
+      padding-right: 8px;
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+  }
+
+  .tab {
+    height: 10px;
+    //width: 1px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: row-resize;
+    margin-top: -9px;
+    border-bottom: 1px solid rgba(231, 105, 105, 0.938);
+    position: relative;
+  }
+
+  .tab:hover {
+    border-left: 2px solid #ccc;
+  }
+
+  .Right {
+    flex: 1;
+    background-color: #cfc;
+    overflow: auto;
+
+    .titleWrap {
+      height: 54px;
+      display: flex;
+      justify-content: space-between;
+      line-height: 1;
+      align-items: center;
+      padding: @rightTitlePaddingDefualt;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .titleLeft {
+        display: flex;
+      }
+
+      .editIcon {
+        font-family: "iconfont";
+        font-size: 18px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

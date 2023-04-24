@@ -38,6 +38,7 @@ function Cron(props) {
   const [week, setWeek] = useState("?");
   const [year, setYear] = useState("*");
 
+  // 解析
   const onParse = () => {
     if (value) {
       try {
@@ -50,7 +51,7 @@ function Cron(props) {
           weekVal,
           yearVal,
         ] = value.split(" ");
-        secondVal = secondRegex.test(secondVal) ? secondVal : "*";
+        secondVal = secondRegex.test(secondVal) ? secondVal : "0";
         minuteValue = minuteRegex.test(minuteValue) ? minuteValue : "*";
         hourVal = hourRegex.test(hourVal) ? hourVal : "*";
         dayVal = dayRegex.test(dayVal) ? dayVal : "*";
@@ -66,7 +67,7 @@ function Cron(props) {
         setWeek(weekVal);
         setYear(yearVal);
       } catch (error) {
-        setSecond("*");
+        setSecond("0");
         setMinute("*");
         setHour("*");
         setDay("*");
@@ -78,7 +79,7 @@ function Cron(props) {
   };
 
   const onReset = () => {
-    setSecond("*");
+    setSecond("0");
     setMinute("*");
     setHour("*");
     setDay("*");
