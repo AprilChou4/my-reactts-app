@@ -4,11 +4,9 @@
 }
 #root {
   width: 100%;
-  height: calc(100% - 48px);
-  color:#000;
-  /* padding-top: 300px; */
-  /* background-color: #252526; */
-  /* text-align: center; */
+  height: 100%;
+  color: #000;
+  background-color: #fff;
 }
 
 .App {

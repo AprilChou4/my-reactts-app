@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Label</title>
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+      }
+      .formpane {
+        top: 10px;
+        right: 10px;
+        background: rgba(230, 230, 230, 0.5);
+      }
+    </style>
+
+    <!-- <script src="../../../../lib/core/ht.js"></script>
+    <script src="../../../../lib/plugin/ht-edgetype.js"></script>
+    <script src="../../../../lib/plugin/ht-form.js"></script> -->
+    <script src="./lib/core/ht.js"></script>
+    <script src="./lib/plugin/ht-edgetype.js"></script>
+    <script src="./lib/plugin/ht-form.js"></script>
+    <script>
+      function init() {
+        ht.Default.setImage("toArrow", {
+          width: 40,
+          height: 20,
+          comps: [
+            {
+              type: "rect",
+              rect: [2, 8, 8, 4],
+              background: "red",
+            },
+            {
+              type: "shape",
+              points: [5, 2, 10, 10, 5, 18, 20, 10],
+              closePath: true,
+              background: "red",
+              borderWidth: 1,
+              borderColor: "red",
+              gradient: "spread.vertical",
+            },
+          ],
+        });
+        ht.Default.setImage("fromArrow", {
+          width: 12,
+          height: 12,
+          comps: [
+            {
+              type: "circle",
+              rect: [1, 1, 10, 10],
+              background: "red",
+            },
+          ],
+        });
+
+        dataModel = new ht.DataModel();
+        g2d = new ht.graph.GraphView(dataModel);
+        g2d.setEditable(true);
+
+        view = g2d.getView();
+        view.className = "main";
+        document.body.appendChild(view);
+        window.addEventListener(
+          "resize",
+          function (e) {
+            g2d.iv();
+          },
+          false
+        );
+
+        createModel();
+      }
+
+      function createModel() {
+        labelStyle = {
+          label: "HT for Web",
+          "label.background": "yellow",
+          "label.position": 17,
+          "label.offset.x": 0,
+          "label.offset.y": 0,
+        };
+        n1 = new ht.Node();
+        n2 = new ht.Node();
+        n3 = new ht.Node();
+        n1.p(320, 80);
+        n2.p(500, 0);
+        n3.p(500, 160);
+        n1.setSize(16, 16);
+        n2.setSize(28, 28);
+        n3.setSize(28, 28);
+        n1.s({
+          opacity: 0.5,
+        });
+        n2.s({
+          opacity: 0.5,
+        });
+        n3.s({
+          opacity: 0.5,
+        });
+        edge1 = new ht.Edge(n1, n2);
+        // edge1.s(labelStyle);
+        edge1.s({
+          // 'edge.gap': 80,
+          "edge.color": "black",
+          "edge.center": false,
+          "edge.type": "ortho",
+          // 'edge.ortho':2
+        });
+
+        edge1.addStyleIcon("fromArrow", {
+          position: 15,
+          keepOrien: true,
+          names: ["fromArrow"],
+        });
+        edge1.addStyleIcon("toArrow", {
+          position: 19,
+          keepOrien: true,
+          names: ["toArrow"],
+        });
+
+        edge2 = new ht.Edge(n1, n3);
+        edge2.s({
+          "edge.color": "black",
+          "edge.center": false,
+          "edge.type": "ortho",
+        });
+
+        edge2.addStyleIcon("fromArrow", {
+          position: 15,
+          keepOrien: true,
+          names: ["fromArrow"],
+        });
+        edge2.addStyleIcon("toArrow", {
+          position: 19,
+          keepOrien: true,
+          names: ["toArrow"],
+        });
+
+        dataModel.add(n1);
+        dataModel.add(n2);
+        dataModel.add(n3);
+        dataModel.add(edge1);
+        dataModel.add(edge2);
+      }
+
+      function createFormPane() {
+        formPane = new ht.widget.FormPane();
+        formPane.setWidth(230);
+        formPane.setHeight(150);
+
+        formPane.addRow(
+          [
+            "position",
+            {
+              slider: {
+                min: 1,
+                max: 55,
+                value: 17,
+                step: 1,
+                onValueChanged: function () {
+                  var value = this.getValue();
+                  dataModel.each(function (data) {
+                    data.s("label.position", value);
+                  });
+                },
+              },
+            },
+          ],
+          [0.1, 0.25]
+        );
+        formPane.addRow(
+          [
+            "scale",
+            {
+              slider: {
+                min: 0,
+                max: 5,
+                value: 1,
+                onValueChanged: function () {
+                  var value = this.getValue();
+                  dataModel.each(function (data) {
+                    data.s("label.scale", value);
+                  });
+                },
+              },
+            },
+          ],
+          [0.1, 0.25]
+        );
+        formPane.addRow(
+          [
+            "offsetX",
+            {
+              slider: {
+                min: -100,
+                max: 100,
+                value: 0,
+                step: 1,
+                onValueChanged: function () {
+                  var value = this.getValue();
+                  dataModel.each(function (data) {
+                    data.s("label.offset.x", value);
+                  });
+                },
+              },
+            },
+          ],
+          [0.1, 0.25]
+        );
+        formPane.addRow(
+          [
+            "offsetY",
+            {
+              slider: {
+                min: -100,
+                max: 100,
+                value: 0,
+                step: 1,
+                onValueChanged: function () {
+                  var value = this.getValue();
+                  dataModel.each(function (data) {
+                    data.s("label.offset.y", value);
+                  });
+                },
+              },
+            },
+          ],
+          [0.1, 0.25]
+        );
+        formPane.addRow(
+          [
+            "rotation",
+            {
+              slider: {
+                min: -Math.PI,
+                max: Math.PI,
+                value: 0,
+                onValueChanged: function () {
+                  var value = this.getValue();
+                  dataModel.each(function (data) {
+                    data.s("label.rotation", value);
+                  });
+                },
+              },
+            },
+          ],
+          [0.1, 0.25]
+        );
+      }
+    </script>
+  </head>
+  <body onload="init();"></body>
+</html>
