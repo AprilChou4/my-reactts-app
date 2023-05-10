@@ -14,6 +14,7 @@ import "./App.css";
 // import Left2RightDemo from "./examples/Left2RightDemo";
 // import FullScreen from "./examples/FullScreen";
 import Segment from "./examples/Segment";
+// import DragDemo from "./examples/DragDemo";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         我是全屏内容
       </FullScreen> */}
       <Segment />
+      {/* <DragDemo /> */}
     </div>
   );
 }

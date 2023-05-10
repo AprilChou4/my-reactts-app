@@ -23,15 +23,15 @@ function NodeWrap(props) {
     // <div>
     <div className={`node-wrap ${className || ""}`}>
       <div className={`node-wrap-box`}>
-        {/* <div className="title" style={titleStyle}>
+        <div className="title" style={titleStyle}>
           {title}
-        </div> */}
+        </div>
         <div className="content" onClick={onContentClick}>
           {children}
         </div>
       </div>
       <div className="add-node-btn-box">
-        {/* <div className="add-node-btn">+</div> */}
+        <div className="add-node-btn">+</div>
       </div>
     </div>
     // </div>

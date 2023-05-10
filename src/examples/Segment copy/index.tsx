@@ -9,9 +9,7 @@ const list = [
     type: "segment",
     children: [
       {
-        name: "node11", // 节点名称
-        type: "theme", // 节点类型- theme=主题  segment=业务,
-        childCount: 0, // 节点的子节点个数
+        name: "node11",
         children: [
           {
             name: "node111",
@@ -31,65 +29,61 @@ const list = [
       },
       {
         name: "node12",
-        children: [
-          {
-            name: "node121",
-          },
-          {
-            name: "node122",
-          },
-        ],
+        // children: [
+        //   {
+        //     name: "node121",
+        //   },
+        //   {
+        //     name: "node122",
+        //   },
+        // ],
       },
     ],
   },
-  {
-    name: "node2",
-    type: "segment",
-    children: [
-      {
-        name: "node21",
-      },
-      {
-        name: "node22",
-      },
-    ],
-  },
-  {
-    name: "node3",
-    type: "segment",
-    children: [
-      {
-        name: "node31",
-      },
-      {
-        name: "node32",
-      },
-    ],
-  },
+  // {
+  //   name: "node2",
+  //   type: "segment",
+  //   children: [
+  //     {
+  //       name: "node21",
+  //     },
+  //     {
+  //       name: "node22",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "node3",
+  //   type: "segment",
+  //   children: [
+  //     {
+  //       name: "node31",
+  //     },
+  //     {
+  //       name: "node32",
+  //     },
+  //   ],
+  // },
 ];
-
-//
-// 设置每个节点的统计字段,并返回所有节点总数。
-var toTreeCount = (data = [], countField = "childCount") =>
-  data.reduce(
-    (total, cur) =>
-      total + (cur[countField] = toTreeCount(cur.children || [], countField)),
-    data.length
-  );
-toTreeCount(list);
-console.log(list, "------childCount");
 
 const NodeSegment = (props) => {
   return (
     <NodeWrap>
-      <div {...props}></div>
+      <div
+        {...props}
+        style={{ width: 80, height: 32, background: "#959595" }}
+      ></div>
     </NodeWrap>
   );
 };
 
 const NodeSubject = (props) => {
   return (
-    <div {...props} className="condition-node"></div>
+    <div
+      {...props}
+      style={{ background: "#cc7777" }}
+      className="condition-node"
+    ></div>
     // <div className="branch-wrap">
     //   <div className="branch-box-wrap">
     //     <div className="branch-box">
@@ -119,31 +113,26 @@ const NodeSubject = (props) => {
   );
 };
 
-const RenderSubjectNode = ({ arr, childCount }) => {
-  // console.log(arr, "-----arr");
+const RenderSubjectNode = ({ arr }) => {
+  console.log(arr, "-----arr");
   return (
     <div className="branch-wrap">
       <div className="branch-box-wrap">
-        <div className={`branch-box `}>
-          <button className={`add-branch `}>{childCount}</button>
+        <div
+          className={`branch-box ${
+            arr.length === 1 ? "branch-box-single" : ""
+          }`}
+        >
+          <button className={`add-branch `}>添加条件</button>
           {arr.map((item, index) => {
             return (
               <div key={index} className={"col-box"}>
                 <NodeSubject>
-                  <div
-                    className={`condition-node-box ${
-                      item.children?.length ? "" : "condition-node-box-last"
-                    }`}
-                  >
+                  <div className="condition-node-box">
                     <div className="auto-judge ">{item.name}</div>
                   </div>
                 </NodeSubject>
-                {item.children && (
-                  <RenderSubjectNode
-                    arr={item.children}
-                    childCount={item.childCount}
-                  />
-                )}
+                {item.children && <RenderSubjectNode arr={item.children} />}
                 {index == 0 ? (
                   <>
                     <div className="top-left-cover-line"></div>
@@ -186,12 +175,7 @@ const RenderNode = (props) => {
             ) : (
               <NodeSubject>{item.name}</NodeSubject>
             )}
-            {item.children && (
-              <RenderSubjectNode
-                arr={item.children}
-                childCount={item.childCount}
-              />
-            )}
+            {item.children && <RenderSubjectNode arr={item.children} />}
           </div>
         );
       })}
@@ -199,7 +183,11 @@ const RenderNode = (props) => {
   );
 };
 const Segment: React.FC<IProps> = () => {
-  return <RenderNode config={list} />;
+  return (
+    <div>
+      <RenderNode config={list} />
+    </div>
+  );
 };
 
 export default Segment;

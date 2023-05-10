@@ -1,0 +1,12 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.box-item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: pink;
+}

@@ -1,55 +1,20 @@
-.segment {
-  transform: scale(1);
-  display: flex;
-  position: relative;
-  width: 100%;
-  margin: 20px 0;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  min-width: -webkit-min-content;
-  min-width: -moz-min-content;
-  min-width: min-content;
-  background-color: #f5f5f7;
-  -webkit-transform-origin: 0 0 0;
-  transform-origin: 0 0 0;
-}
 // node-wrap=====
 .node-wrap {
   display: inline-flex;
-  // width: 100%;
-  // flex-direction: row;
-  // -webkit-box-pack: start;
-  // -ms-flex-pack: start;
-  // justify-content: flex-start;
-  // -webkit-box-align: center;
-  // -ms-flex-align: center;
-  // align-items: center;
-  // -ms-flex-wrap: wrap;
-  // flex-wrap: wrap;
-  // -webkit-box-flex: 1;
-  // -ms-flex-positive: 1;
-  // padding: 0 50px;
-  // position: relative;
-  flex-direction: row;
+  width: 100%;
+  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  // padding: 0 50px;
+  padding: 0 50px;
   position: relative;
-  overflow: hidden; // 增加
 }
 .node-wrap .content {
   font-size: 13px;
@@ -73,8 +38,8 @@
   display: inline-flex;
   flex-direction: column;
   position: relative;
-  // width: 220px;
-  // min-height: 72px;
+  width: 220px;
+  min-height: 72px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   background: #9b8686;
@@ -110,21 +75,22 @@
   border: 1px solid #f25643;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
-// .node-wrap-box .title {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   padding-left: 16px;
-//   padding-right: 30px;
-//   width: 100%;
-//   height: 24px;
-//   line-height: 24px;
-//   font-size: 12px;
-//   color: #fff;
-//   text-align: left;
-//   background: raba(255, 255, 255, 0.6);
-//   border-radius: 4px 4px 0 0;
-// }
+.node-wrap-box .title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 30px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  // background: fade(@primary-color, 60%);
+  background: raba(255, 255, 255, 0.6);
+  border-radius: 4px 4px 0 0;
+}
 .node-wrap-box .title .iconfont {
   font-size: 12px;
   margin-right: 5px;
@@ -150,8 +116,6 @@
   position: relative;
   font-size: 13px;
   padding: 0 16px;
-  height: 32px;
-  line-height: 32px;
   // padding-right: 30px;
 }
 .node-wrap-box .content .text {
@@ -175,27 +139,27 @@
   display: block;
   white-space: nowrap;
 }
-// .node-wrap-box:before {
-//   content: "";
-//   position: absolute;
-//   top: -12px;
-//   left: 50%;
-//   -webkit-transform: translateX(-50%);
-//   transform: translateX(-50%);
-//   width: 0;
-//   height: 4px;
-//   border-style: solid;
-//   border-width: 8px 6px 4px;
-//   border-color: #cacaca transparent transparent;
-//   background: #f5f5f7;
-// }
+.node-wrap-box:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  border-style: solid;
+  border-width: 8px 6px 4px;
+  border-color: #cacaca transparent transparent;
+  background: #f5f5f7;
+}
 .node-wrap-box.start-node:before {
   content: none;
 }
 
 // 添加按钮
 .add-node-btn-box {
-  width: 120px;
+  width: 240px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -214,24 +178,24 @@
   bottom: 0;
   z-index: -1;
   margin: auto;
-  width: 100%;
-  height: 2px;
+  width: 2px;
+  height: 100%;
   background-color: #cacaca;
   z-index: 1;
 }
 
-// .add-node-btn {
-//   // background-color: aliceblue;
-//   width: 240px;
-//   padding: 20px 0 32px;
-//   display: flex;
-//   -webkit-box-pack: center;
-//   justify-content: center;
-//   flex-shrink: 0;
-//   -webkit-box-flex: 1;
-//   flex-grow: 1;
-//   z-index: 2;
-// }
+.add-node-btn {
+  // background-color: aliceblue;
+  width: 240px;
+  padding: 20px 0 32px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  z-index: 2;
+}
 
 // 条件
 .branch-wrap {
@@ -243,28 +207,25 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  // min-height: 270px;
+  min-height: 270px;
   width: 100%;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 .branch-box {
   display: flex;
-  flex-direction: column;
   overflow: visible;
-  // min-height: 180px;
+  min-height: 180px;
   height: auto;
   // border-bottom: 2px solid #ccc;
-  // border-top: 2px solid #ccc;
-  border-left: 2px solid #ccc;
-  // border-right: 2px solid #ccc;
+  border-top: 2px solid #ccc;
   position: relative;
   margin-top: 15px;
   margin-top: 0;
@@ -274,48 +235,54 @@
 .add-branch {
   border: none;
   outline: none;
+  user-select: none;
   justify-content: center;
   font-size: 12px;
-  min-width: 24px;
-  height: 24px;
-  line-height: 24px;
-  border-radius: 50%;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
   color: #3296fa;
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   position: absolute;
-  // top: -16px;
-  // left: 50%;
-  top: 50%;
-  left: -2px;
-  margin-top: -15px;
+  top: -16px;
+  left: 50%;
   transform: translateX(-50%);
   transform-origin: center center;
   cursor: pointer;
   z-index: 1;
   display: inline-flex;
   align-items: center;
-  // -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  // transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.branch-box-single {
+  > .add-branch {
+    top: 30px;
+  }
+  > .col-box > .condition-node > .condition-node-box {
+    justify-content: center;
+  }
 }
 
 .add-branch:hover {
-  // transform: translateX(-50%) scale(1.1);
   transform: translateX(-50%) scale(1.1);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
-// .add-branch:active {
-//   transform: translateX(-50%);
-//   box-shadow: none;
-// }
+.add-branch:active {
+  transform: translateX(-50%);
+  box-shadow: none;
+}
 
 .branch-box .col-box {
   background: #f5f5f7;
   display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: row;
+  flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
   position: relative;
@@ -338,7 +305,7 @@
 
 // 条件节点
 .condition-node {
-  min-height: 60px;
+  min-height: 220px;
 }
 
 .condition-node,
@@ -346,12 +313,12 @@
   display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: row;
+  flex-direction: column;
   -webkit-box-flex: 1;
 }
 
 .condition-node-box {
-  // padding-top: 30px;
+  padding-top: 30px;
   padding-right: 50px;
   padding-left: 50px;
   -webkit-box-pack: center;
@@ -372,61 +339,51 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 100%;
-  // margin: auto 0;
-  // width: 50%;
-  height: 2px;
+  width: 2px;
+  height: 100%;
   background-color: #cacaca;
 }
 
-.condition-node-box-last {
-  &:before {
-    margin: auto 0;
-    width: 50%;
-  }
-}
 .auto-judge {
   background: #fff;
   border-radius: 4px;
   cursor: pointer;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 8px;
+  min-height: 72px;
+  padding: 14px 19px;
   position: relative;
-  min-width: 120px;
+  width: 220px;
 }
 
 .top-left-cover-line {
   left: -1px;
 }
 
-.top-left-cover-line {
-  left: -2px;
-}
 .top-left-cover-line,
 .top-right-cover-line {
   position: absolute;
-  height: 50%;
-  width: 3px;
+  height: 8px;
+  width: 50%;
   background-color: #f5f5f7;
-  top: -1px;
+  top: -4px;
 }
+
 .top-right-cover-line {
-  top: 50%;
-  left: -2px;
-  margin-top: 1px; // 增加
+  right: -1px;
 }
+
 .bottom-left-cover-line {
-  top: -1px;
+  left: -1px;
 }
+
 .bottom-left-cover-line,
 .bottom-right-cover-line {
   position: absolute;
-  height: 50%;
-  width: 3px;
+  height: 8px;
+  width: 50%;
   background-color: #f5f5f7;
-  right: -2px;
+  bottom: -4px;
 }
+
 .bottom-right-cover-line {
-  top: 50%;
+  right: -1px;
 }
